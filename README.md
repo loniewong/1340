@@ -14,9 +14,7 @@ There are a variety of functions and features that this system could perform.
 
 To begin with, the system is mainly used to manage the table status of the restaurant, including the occupying and releasing of tables. The system should display clearly which tables are occupied and which are not. It would be able to change the status availability of tables through the input system.
 
-Apart from doing basic table management, it would also be able to perform simple processing or calculations. For example, the system could automatically assign tables for customers in different sizes. The table is not assigned ramdomly, but to suggest a vacant table which has minimal enough seats to fulfill the customer size. Moreover, the system would calculate the dining time of all ocuppied tables. Notifications would be displayed on screen for tables occupied for more than 2 hours.
-
-Last but not least, there is a function that would do simple analysis on orders of all customers. It would sort out which type of food or drinks are the most popular and which are not. It would help the restaurant owner to rearrange the pricing or develop new food ideas to fit into the interests of customers. 
+Apart from doing basic table management, it would also be able to perform simple processing or calculations. For example, the system could automatically assign tables for customers in different sizes. The table is not assigned ramdomly, but to suggest a vacant table which has minimal enough seats to fulfill the customer size.
 
 ## Input/output Specifications
 
