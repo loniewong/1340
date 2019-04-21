@@ -2,7 +2,7 @@
 Project Ideas: Topic 1
 
 ## Problem Statement (what problem to solve)
-To build a table management system for a family-owned restaurant. The system would manage reservation, occupancy, and billing of all tables on its own. It would basically replace the job of the employee standing behind the reception desk. Making the operating processes of the restaurnat become more efficient, the system could manage tables to fulfill the maximum amount of customer needs, thus increasing profit and decreasing workload of waiters.
+To build a table management system for a family-owned restaurant. The system would manage reservation, occupancy on its own. It would basically replace the job of the employee standing behind the reception desk. Making the operating processes of the restaurnat become more efficient, the system could manage tables to fulfill the maximum amount of customer needs, thus increasing profit and decreasing workload of waiters.
 
 ## Problem Setting (reasonable assumptions)
 Assume there are 50 seats and 3 different sizes of tables in the restaurant. First of all, for the small sized tables, they are mainly for people coming in pairs, like couples. Secondly, the medium sized tables are for people coming in small groups, a maximum of 4 people, like small families. Lastly, as for the large sized tables. They are for people coming in large groups, supporting more than 4 people, likes a big group of family and friends.
