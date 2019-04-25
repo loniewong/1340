@@ -36,7 +36,7 @@ Restaurent Table Management Menu
 Please enter your choice: 
 ```
 The user should now input a integer corresponding to the menu shown to perform the described function.
-# Suppose "1" is entered:
+### Suppose "1" is entered:
 This function is to help check whehter a table is occupied or not.
 
 The following menu would be printed out:
@@ -57,7 +57,7 @@ Table 1 is occupied!
 ```
 to show whether the table number inputted is available or not.
 
-# Suppose "2" is entered:
+### Suppose "2" is entered:
 This function could help change the availability of tables into "Occupied".
 
 The following sentence would be printed out:
@@ -80,7 +80,7 @@ Please input the number of customers again:
 ```
 Until a possible number of customers is inputted.
 
-# Suppose "3" is entered:
+### Suppose "3" is entered:
 This function is to help release a table, to change its availability to "unoccupied".
 
 The following sentence would be pritned out:
@@ -92,7 +92,7 @@ It asks for a integer input denoting the table number of a table which the user 
 Table 17 is released!
 ```
 
-# Suppose "4" is entered:
+### Suppose "4" is entered:
 This function help print out all of the information of tables which the user wants. 
 
 The following sentence would be printed out first:
@@ -107,5 +107,5 @@ Table availability: Unoccupied
 ```
 It would show the table number, the size of the table, and the availability of that table too.
 
-# Suppose "-1" is entered:
+### Suppose "-1" is entered:
 The program would stop and all the data would be deleted, except the file and the data stored inside the file (number of 4 and 6-person table)
