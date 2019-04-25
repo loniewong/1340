@@ -12,6 +12,7 @@ struct table{
 };
 
 //print user menu and ask for user input
+//input: variable with unknown content  Output: return user input to that variable
 void printMenu(int *userInput){
     cout << endl;
     cout << "Restaurent Table Management Menu"<<endl;
@@ -30,6 +31,7 @@ void printMenu(int *userInput){
 }
 
 //to get the table information contained in the file and get the number of 6, 4 and 2-person table, return true if file input excist, false elsewise
+//input: file name which contains table information   output: 3 variables containing the number of tables of 3 different sizes of tables
 bool generateTable(string tableInfo, int *numOfSix, int *numOfFour, int *numOfTwo){
     int sixT, fourT;
     ifstream inpFile(tableInfo);
@@ -55,6 +57,7 @@ bool generateTable(string tableInfo, int *numOfSix, int *numOfFour, int *numOfTw
 
 
 //to initialize table information using linked list
+//input: the head of the list, table number and table size . Output: not output, only to create a new item to the list
 void appendTable(table *&head, int tableNum, int numOfPeople){
     table *new_table = new table;
     table *current = head;
@@ -86,6 +89,7 @@ void appendTable(table *&head, int tableNum, int numOfPeople){
 
 
 //to check if the table user inputted is occupied or not
+//Input: the head of the list, number of tables of the 3 sizes of tables . Output: print the availability of table on screen 
 void checkAvab(table *&head, int numOfTwo, int numOfFour,int numOfSix){
     int tableNum;
     bool availability = false;
@@ -129,6 +133,7 @@ void checkAvab(table *&head, int numOfTwo, int numOfFour,int numOfSix){
 
 
 //to occupy a table by changing it availability
+//input: the head of the list, and the number of customers .  Output: no output, only change the content of a item in the list 
 void occupyTable(table *& head){
     table *current = head;
     int numOfCustomers, tableNum = -1;
@@ -167,6 +172,7 @@ void occupyTable(table *& head){
 
 
 //to release a table by changing its table availability
+//input: the head of the list, total number of tables and table number .  Output: no output, only to change the availability of the specified table
 void releaseTable(table *&head, int tableSum){
     table *current = head;
     int tableNum;
@@ -198,6 +204,7 @@ void releaseTable(table *&head, int tableSum){
 
 
 //output all the data of tables
+//input: head of the list, the sum of tables and the table number . Output: all the table information of the chosen table number
 void tableStatus(table *&head, int tableSum){
     table *current = head;
     int tableNum;
