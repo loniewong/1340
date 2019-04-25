@@ -83,8 +83,6 @@ void appendTable(table *&head, int tableNum, int numOfPeople){
             current = current->next;
         }
     }
-    
-    delete new_table;
 }
 
 
