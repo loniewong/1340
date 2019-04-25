@@ -16,9 +16,96 @@ To begin with, the system is mainly used to manage the table status of the resta
 
 Apart from doing basic table management, it would also be able to perform simple processing or calculations. For example, the system could automatically assign tables for customers in different sizes. The table is not assigned ramdomly, but to suggest a vacant table which has minimal enough seats to fulfill the customer size.
 
-## Input/output Specifications
+## Input/output Specifications & Execution Instructions
+There are serveral inputs that the user should provide throughout the program operation.
+First of all, after the start of the program. The user should type in the file name which contains the number of 6 and 4-person tables. The prgram should look the same as follows:
+```
+Input your table information file name: 
+```
+After the input of correct file name. A user manual would be printed out on screen asking for the user to select a specific function which the user wish to perform. The menu look like this:
+```
+Restaurent Table Management Menu
+--------------------------------
+1) Check Table Availability
+2) Occupy a table
+3) Release a table
+4) Print table status
 
-## Compilation
+-1) Exit
 
-## Execution Instructions
+Please enter your choice: 
+```
+The user should now input a integer corresponding to the menu shown to perform the described function.
+**Suppose "1" is entered:**
+This function is to help check whehter a table is occupied or not.
 
+The following menu would be printed out:
+```
+Table number of 2-person table: 1-9
+Table number of 4-person table: 10-14
+Table number of 6-person table: 15-17
+Please input a valid table number: 
+```
+It would show the range of table numbers of those 3 sizes of tables. For this example, the number of tables of 2,4,6-person table is 9,5,3. 
+The user should then enter the table number which he wants to check its availability on. Supposed ```1```is entered. It would print out a sentence:
+```
+Table 1 is unoccupied!
+```
+or
+```
+Table 1 is occupied!
+```
+to show whether the table number inputted is available or not.
+
+**Suppose "2" is entered:**
+This function could help change the availability of tables into "Occupied".
+
+The following sentence would be printed out:
+```
+Please input the number of customers:
+```
+The program would expect the user to input a integer. For example, ```4```.
+After that, the program would search through the list of tables and output a smallest possible size of table which could fit the number of customers:
+```
+Thank you! Your table number is 17.
+```
+If all the tables are unavilable, then the prgram would output:
+```
+Sorry! All our tables are occupied at this moment! Please wait!
+```
+Or If the number of customers exceed the capacity of the largest table, then the program would output:
+```
+Sorry! We could not provide a table for more than 6 people! Please separate into 2 tables! Thanks!
+Please input the number of customers again: 
+```
+Until a possible number of customers is inputted.
+
+**Suppose "3" is entered:**
+This function is to help release a table, to change its availability to "unoccupied".
+
+The following sentence would be pritned out:
+```
+Please input a table number of the table you want to release: 
+```
+It asks for a integer input denoting the table number of a table which the user wants to release. For example, ```17``` is entered by the user. The following sentence would be printed out to verify your action:
+```
+Table 17 is released!
+```
+
+**Suppose "4" is entered:**
+This function help print out all of the information of tables which the user wants. 
+
+The following sentence would be printed out first:
+```
+Please input a table number to show its table information (0 = all tables): 
+```
+It asks for a integer input which denotes the table number of a table. If 0 is inputted, the program would print out the information of all tables. For example ```5``` is inputted instead. The following would be the output:
+```
+Table Number: 5
+Table Size: 2
+Table availability: Unoccupied
+```
+It would show the table number, the size of the table, and the availability of that table too.
+
+**Suppose "-1" is entered:**
+The program would stop and all the data would be deleted, except the file and the data stored inside the file (number of 4 and 6-person table)
